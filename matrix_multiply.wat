@@ -1,6 +1,6 @@
 ;;4x4 matrix multiplication using SIMD instruction set
 ;;Created by Otto-Ville Lamminpää
-;;otto-ville.lamminpaa@gmail.com
+;;ottoville.lamminpaa@gmail.com
 
 ;;  LICENSE
 ;;  This code can be freely used, as long as author is mentioned in credits section of the software
