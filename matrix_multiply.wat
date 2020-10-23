@@ -46,7 +46,7 @@
 
         (result f32 f32 f32 f32 f32 f32 f32 f32 f32 f32 f32 f32 f32 f32 f32 f32) 
 
-        (call $transpose
+        (call $transposeAndSum
             (f32x4.mul 
                 (call $initv128 (local.get $0) (local.get $1) (local.get $2) (local.get $3))
                 (call $initv128 (local.get $o0) (local.get $o4) (local.get $o8) (local.get $o12))
@@ -75,7 +75,7 @@
         f32x4.extract_lane 3
 
     ;;Second
-        (call $transpose
+        (call $transposeAndSum
             (f32x4.mul
                 (call $initv128 (local.get $4) (local.get $5) (local.get $6) (local.get $7))
                 (call $initv128 (local.get $o0) (local.get $o4) (local.get $o8) (local.get $o12))
@@ -104,7 +104,7 @@
         global.get $v0
         f32x4.extract_lane 3
     ;;Third
-        (call $transpose
+        (call $transposeAndSum
             (f32x4.mul
                 (call $initv128 (local.get $8) (local.get $9) (local.get $10) (local.get $11) )
                 (call $initv128  (local.get $o0) (local.get $o4) (local.get $o8) (local.get $o12)) )
@@ -130,7 +130,7 @@
         global.get $v0
         f32x4.extract_lane 3
     ;;Fourth
-        (call $transpose
+        (call $transposeAndSum
             (f32x4.mul
                 (call $initv128 (local.get $12) (local.get $13) (local.get $14) (local.get $15))
                 (call $initv128 (local.get $o0) (local.get $o4) (local.get $o8) (local.get $o12))
@@ -159,7 +159,7 @@
         global.get $v0
         f32x4.extract_lane 3
     )
-    (func $transpose
+    (func $transposeAndSum
         (param $v0 v128)
         (param $v1 v128)
         (param $v2 v128)
