@@ -2,6 +2,10 @@
 ;;Created by Otto-Ville Lamminpää
 ;;otto-ville.lamminpaa@gmail.com
 
+;;  LICENSE
+;;  This code can be freely used, as long as author is mentioned in credits section of the software
+;;  If this code, or any part of it, is included in software or set viewable to public audiance, this LICENSE section must be included with the code 
+
 (module
     (global $gv0 (mut v128) (v128.const i32x4 0 0 0 0))
     (global $v0 (mut v128) (v128.const i32x4 0 0 0 0))
