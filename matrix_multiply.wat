@@ -73,27 +73,18 @@
                 )
             )
             (local.tee $v1
-                (v128.load
-                    (i32.add
-                        (local.get $1)
-                        (i32.const 16)
-                    )
+                (v128.load offset=16
+                    (local.get $1)
                 )
             )
             (local.tee $v2
-                (v128.load
-                    (i32.add
-                        (local.get $1)
-                        (i32.const 32)
-                    )
+                (v128.load offset=32
+                   (local.get $1)
                 )
             )
             (local.tee $v3
-                (v128.load
-                    (i32.add
-                        (local.get $1)
-                        (i32.const 48)
-                    )
+                (v128.load offset=48
+                    (local.get $1)
                 )
             )
             (v128.load
@@ -110,11 +101,8 @@
             (local.get $v1)
             (local.get $v2)
             (local.get $v3)
-            (v128.load
-                (i32.add
-                    (local.get $0)
-                    (i32.const 16)
-                )
+            (v128.load offset=16
+                (local.get $0)
             )
             
         )
@@ -127,11 +115,8 @@
             (local.get $v1)
             (local.get $v2)
             (local.get $v3)
-            (v128.load
-                (i32.add
-                    (local.get $0)
-                    (i32.const 32)
-                )
+            (v128.load offset=32
+                (local.get $0)
             )
             
         )
@@ -144,11 +129,8 @@
             (local.get $v1)
             (local.get $v2)
             (local.get $v3)
-            (v128.load
-                (i32.add
-                    (local.get $0)
-                    (i32.const 48)
-                )
+            (v128.load offset=48
+                (local.get $0)
             )
             
         )
