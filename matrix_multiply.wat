@@ -93,9 +93,7 @@
             
         )
         v128.store
-        i32.const 16
         local.get $2
-        i32.add
         (call $row
             (local.get $v0)
             (local.get $v1)
@@ -106,10 +104,8 @@
             )
             
         )
-        v128.store
-        i32.const 32
+        v128.store offset=16
         local.get $2
-        i32.add
         (call $row
             (local.get $v0)
             (local.get $v1)
@@ -120,10 +116,8 @@
             )
             
         )
-        v128.store
-        i32.const 48
+        v128.store offset=32
         local.get $2
-        i32.add
         (call $row
             (local.get $v0)
             (local.get $v1)
@@ -134,7 +128,7 @@
             )
             
         )
-        v128.store
+        v128.store offset=48
     )
     (export "multiply" (func $multiply))
 )
